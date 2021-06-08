@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { getSortedPostsData } from "../lib/posts";
 import TimeLine from "../components/timeline";
 import education from "../content/education.json";
@@ -54,7 +53,7 @@ export default function Home({ allPostsData, education, projects }) {
         <p className="text-5xl my-10">Education</p>
         <div className="flex">
           <div className="hidden md:block">
-            <Image width="200" height="200" src="/images/education.svg" />
+            <img width="200" height="200" src="../public/images/education.svg" />
           </div>
           <div className="flex-1 p-5">
             <TimeLine
@@ -80,11 +79,11 @@ export default function Home({ allPostsData, education, projects }) {
             />
           </div>
           <div className="hidden md:block">
-            <Image
+            <img
               className=""
               width="200"
               height="200"
-              src="/images/projects.svg"
+              src="../public/images/projects.svg"
             />
           </div>
         </div>

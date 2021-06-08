@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
-    "start": "next start && next export",
+    "build": "next build && next export",
+    "start": "next start ",
     "lint": "eslint --fix ."
   },
   "dependencies": {

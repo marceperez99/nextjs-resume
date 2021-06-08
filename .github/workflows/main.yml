@@ -1,7 +1,7 @@
 name: Deploy to github pages
 
 on:
-  pull_request:
+  push:
     branches: [main]
 
   workflow_dispatch:
@@ -32,9 +32,12 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /nextjs-resume
         run: |
           npm ci
           npm run build
+          touch ./out/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

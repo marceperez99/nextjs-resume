@@ -107,7 +107,7 @@ export default function Home({ allPostsData, education, projects }) {
       <footer>
         <p className="text-gray-600 text-center pb-5 pt-10">
           This site was generated with Next.JS.
-        Checkout the source code at <a href='#' className="text-blue-800 font-bold">Github</a></p>
+        Checkout the source code at <a href='https://github.com/marzeperez99/nextjs-resume' className="text-blue-800 font-bold">Github</a></p>
       </footer>
     </div>
   );

@@ -21,6 +21,7 @@ const Post = ({ postData }) => {
                 <p className='italic text-gray-600'>{postData.date}</p>
             </div>
             <hr />
+            <div className="mt-6 w-full md:w-10/12 mx-auto text-md text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </main>
     </div >
 };
@@ -35,7 +36,7 @@ export async function getStaticPaths() {
     }
 };
 export async function getStaticProps({ params }) {
-    const postData = getPostData(params.id)
+    const postData = await getPostData(params.id)
     return {
         props: {
             postData

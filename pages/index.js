@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 export default function Home({ allPostsData, education, projects }) {
   return (
     <div className=" container mx-auto h-screen px-4">
@@ -45,7 +43,7 @@ export default function Home({ allPostsData, education, projects }) {
             <FontAwesomeIcon className='mr-3' icon={faLinkedin} />
           LinkedIn
         </a>
-          <a className='flex text-gray-900 hover:text-blue-900'>
+          <a href="https://github.com/marzeperez99" className='flex text-gray-900 hover:text-blue-900'>
             <FontAwesomeIcon className='mr-3' icon={faGithub} />
           Github
         </a>
@@ -54,7 +52,7 @@ export default function Home({ allPostsData, education, projects }) {
         <p className="text-5xl my-10">Education</p>
         <div className="flex">
           <div className="hidden md:block">
-            <img width="200" height="200" src={prefix + "/images/education.svg"} />
+            <img width="200" height="200" src={"/images/education.svg"} />
           </div>
           <div className="flex-1 p-5">
             <TimeLine
@@ -84,7 +82,7 @@ export default function Home({ allPostsData, education, projects }) {
               className=""
               width="200"
               height="200"
-              src={prefix + "/images/projects.svg"}
+              src={"/images/projects.svg"}
             />
           </div>
         </div>
@@ -92,7 +90,7 @@ export default function Home({ allPostsData, education, projects }) {
         <p className="text-center text-3xl">My Blog</p>
         <div className="grid grid-cols-1 gap-5 mt-7">
           {allPostsData.map(({ id, title, date }) => (
-            <Link key={id} href={prefix + `/posts/${id}`}>
+            <Link key={id} href={`/posts/${id}`}>
               <div
                 className="flex flex-row p-5 rounded-md shadow-md border hover:bg-gray-100 "
               >

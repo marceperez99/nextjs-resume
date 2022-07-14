@@ -1,10 +1,17 @@
 [
-    {
-        "name": "TCG Pokedex",
-        "description": "React App that shows Pokemon Cards consuming an REST API"
-    },
-    {
-        "name": "TODO: Upload more projects",
-        "description": "I promise I'll do it "
-    }
+  {
+    "name": "TCG Pokedex",
+    "link": "https://marzeperez99.github.io/tcg_pokedex",
+    "description": "React App that shows Pokemon Cards consuming  REST API"
+  },
+  {
+    "name": "N-Queens Simulator",
+    "link": "https://marzeperez99.github.io/N-Reinas/",
+    "description": "Website to visualize and compare different aproaches to solve the N-Queens problem such as backtracking and stochastic algorithms. This project was done with pure HTML and Javascript"
+  },
+  {
+    "name": "Silver Journey",
+    "link": "https://expo.dev/@marce_perez/silver-journey-app?serviceType=classic&distribution=expo-go",
+    "description": "Mobile App to keep your language learning progress. It lets you add activities, create a schedule and remind you of your planned activities. Built with React Native and testable through Expo Go"
+  }
 ]

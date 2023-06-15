@@ -1,13 +1,13 @@
 [
   {
     "name": "TCG Pokedex",
-    "link": "https://marzeperez99.github.io/tcg_pokedex",
+    "link": "https://marceperez99.github.io/tcg_pokedex",
     "description": "React App that shows Pokemon Cards consuming  REST API"
   },
   {
     "name": "N-Queens Simulator",
-    "link": "https://marzeperez99.github.io/N-Reinas/",
-    "description": "Website to visualize and compare different aproaches to solve the N-Queens problem such as backtracking and stochastic algorithms. This project was done with pure HTML and Javascript"
+    "link": "https://marceperez99.github.io/N-Reinas/",
+    "description": "Website to visualize and compare different aproaches to solve the N-Queens problem such as backtracking and stochastic algorithms. This project was done with vanilla HTML and Javascript"
   },
   {
     "name": "Silver Journey",
